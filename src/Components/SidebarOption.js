@@ -1,8 +1,8 @@
  import { InfoOutlined } from '@material-ui/icons';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
- import './SidebarOption.css';
- import db from '../firebase';
+import './SidebarOption.css';
+import db from '../firebase';
  
  function SidebarOption({ Icon, title, addChannelOption, id}) {
 
