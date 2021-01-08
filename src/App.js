@@ -3,14 +3,14 @@ import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Chat from './Components/Chat';
-import { useState } from 'react';
 import Login from './Components/Login';
+import { useStateValue } from './StateProvider';
 
 
 function App() {
 
   //initially there will be no user so that user can login, then the state will have user
-  const [user, setUser] = useState(null);
+  const [{user}, dispatch] = useStateValue()
   return (
     <div className="app">
       <Router>
