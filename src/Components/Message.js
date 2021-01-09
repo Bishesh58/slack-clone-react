@@ -3,9 +3,11 @@ import './Message.css';
 
 
 function Message({message, timestamp, user, userImage}) {
+
+    console.log("This is user image",userImage);
     return (
         <div className='message'>
-            <img sr={userImage} alt='img' />
+            <img src={userImage} alt='' />
             <div className="message__info">
                 <h4>
                     {user}

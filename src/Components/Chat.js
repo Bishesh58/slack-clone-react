@@ -30,9 +30,6 @@ function Chat() {
         )
     }, [roomId])
 
-
-    console.log(roomDetails)
-
     return (
         <div className='chat'>
             <div className="chat__header">
